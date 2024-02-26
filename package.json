@@ -1,0 +1,11 @@
+{
+  "name": "show-favs",
+  "version": "1.0.0",
+  "description": "Project to display movies and shows and save your favorite ones",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Natalia392",
+  "license": "ISC"
+}
