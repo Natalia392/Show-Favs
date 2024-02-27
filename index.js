@@ -10,8 +10,13 @@ const app = express();
 
 // We make use of the method app.use() to tell our app to use express in json format
 app.use(express.json());
+app.use(express.urlencoded({ exteded: true }))
 // We use this method to prevent CORS errors from browsers
 app.use(cors());
+
+app.get('/', (req, res) => {
+  res.json({ message: 'Welcome to movies favorites app' });
+})
 
 // Asign port and listen to server
 app.listen(port, (error) => {
